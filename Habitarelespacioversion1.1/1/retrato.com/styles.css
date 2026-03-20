@@ -18,7 +18,7 @@ body {
 
 .volver {
   position: fixed;
-  top: 16px;
+  top: calc(var(--menu-altura) + 14px);
   left: 18px;
   display: inline-flex;
   align-items: center;
@@ -40,7 +40,7 @@ body {
 
 .escena {
   position: fixed;
-  inset: 0;
+  inset: calc(var(--menu-altura)+ 2px) 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -135,4 +135,9 @@ body {
   .retrato-lugar {
     font-size: clamp(24px, 7vw, 28px);
   }
+
+  .volver{
+  top: calc(var(--menu-altura) + 10px);
+  left: 12px;
+}
 }
